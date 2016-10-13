@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.muamalat.myapplication.MainActivity"
+    android:weightSum="1">
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/contentView"-->
+        <!--android:scrollbars="vertical"-->
+        <!--android:layout_weight="0.10"  />-->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:text="No"
+            android:layout_height="wrap_content"
+            android:layout_width="23dp"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="Nama"
+            android:layout_width="116dp"
+            android:textSize="12sp"
+            android:layout_weight="0.89"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Berat"
+            android:layout_width="48dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Harga Jual"
+            android:layout_width="75dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Stock"
+            android:textSize="12sp"
+            android:layout_width="29dp"
+            android:layout_weight="0.03"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:id="@+id/listView"
+        android:layout_weight="1" />
+
+    <!--<Button-->
+        <!--android:text="Button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/buttonView"-->
+        <!--android:textSize="24sp"-->
+        <!--style="@android:style/Widget.Button" />-->
+</LinearLayout>
