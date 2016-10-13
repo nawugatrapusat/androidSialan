@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setTitle("Sistem Informasi Penjualan");
         setContentView(R.layout.activity_main);
-//        contentView = (TextView) findViewById(R.id.contentView);
+///        contentView = (TextView) findViewById(R.id.contentView);
 //        contentView.setMovementMethod(new ScrollingMovementMethod());
         listView = (ListView) findViewById(R.id.listView);
 //        buttonView = (Button) findViewById(R.id.buttonView);
