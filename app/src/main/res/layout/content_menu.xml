@@ -5,12 +5,69 @@
     android:id="@+id/content_menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.muamalat.myapplication.MenuActivity"
     tools:showIn="@layout/app_bar_menu">
 
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:tabMode="scrollable" />-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:text="No"
+                android:layout_height="wrap_content"
+                android:layout_width="23dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:text="Nama"
+                android:layout_width="116dp"
+                android:textSize="12sp"
+                android:layout_weight="0.89"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Berat"
+                android:layout_width="48dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Harga Jual"
+                android:layout_width="75dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Stock"
+                android:textSize="12sp"
+                android:layout_width="29dp"
+                android:layout_weight="0.03"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:id="@+id/listViews"
+            android:layout_weight="1" />
+    </LinearLayout>
 </RelativeLayout>
